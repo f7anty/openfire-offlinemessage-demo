@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src='js/jquery/jquery-1.11.2.min.js'></script>
+<script src='js/strophe/strophe.min.js'></script>
+<script src='js/strophe/strophe.rsm.js'></script>
+<script src='js/strophe/strophe.archive.js'></script>
+<script src='js/chat.js'></script>
+<title>Insert title here</title>
+<style type="text/css">
+.btn{
+width: 80px
+}
+</style>
+</head>
+<body>
+	<p class="welcome" id="welcome">Hello! this is a plugin demo. any new announcement will appear below.</p>
+	<!-- 消息栏 -->
+	<div id="log"></div>
+	<!-- 1.选择【connect】，用户连接到openfire服务端，此时处于离线状态。当有其他用户向其发送消息时，离线消息的数量会显示在消息栏里。用当前配置的环境,jid 为user@app1-->
+	<div id="login_div">
+		JID:<input id="jid" name="jid" value="user@app1"> 
+		Password:<input id="password" name="password" value="1"> 
+		<input type="button" id="btnConnect" value="connect" class="btn">
+	</div>
+	<br>
+	<!-- 2.选择【online】，用户上线，将清除离线表中的数据-->
+	<div id="online_div">
+		<input type="button" id="btnOnline" value="online" class="btn">
+	</div>
+	<!-- 3.选择【disconnect】，关闭连接-->
+	<br>
+	<div id="disconnect_div">
+		<input type="button" id="btnDisconnect" value="disconnect" class="btn">
+	</div>
+	
+</body>
+</html>
